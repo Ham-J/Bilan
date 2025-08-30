@@ -4,7 +4,7 @@ import cors from 'cors';
 import { sequelize } from './models/index.js';
 import authRoutes from './routes/auth.js';
 import usersRoutes from './routes/user.js';
-
+import reservationsRoutes from './routes/reservations.js';
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -14,7 +14,8 @@ app.use(cors({ origin: process.env.CORS_ORIGIN?.split(',') ?? true, credentials:
 const PORT = process.env.PORT || 3000;
 
 app.use('/api/auth', authRoutes);
-app.use('/api/users', usersRoutes)
+app.use('/api/users', usersRoutes);
+app.use('/api/reservations',reservationsRoutes);
 
 async function start () {
   try {
