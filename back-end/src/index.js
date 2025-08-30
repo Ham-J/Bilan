@@ -2,8 +2,8 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { sequelize } from './models/index.js';
-import authRoutes from './routes/auth.js'
-
+import authRoutes from './routes/auth.js';
+import usersRoutes from './routes/user.js';
 
 const app = express();
 app.use(express.json());
@@ -14,7 +14,7 @@ app.use(cors({ origin: process.env.CORS_ORIGIN?.split(',') ?? true, credentials:
 const PORT = process.env.PORT || 3000;
 
 app.use('/api/auth', authRoutes);
-
+app.use('/api/users', usersRoutes)
 
 async function start () {
   try {
