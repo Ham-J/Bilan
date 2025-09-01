@@ -46,6 +46,7 @@ git clone https://github.com/Ham-J/Bilan.git
 cd Bilan
 
 -installer la base donnée
+-renommer .env.example en .env
 -dans terminal cd back-end npm run dev
 -dans un autre terminal cd front-end npm start
  ```
