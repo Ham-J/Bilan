@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white mt-5">
-        <div className="container py-4 d-flex justify-content-around">
+    <footer className="mt-5">
+        <div className="container">
             <div>
                 <ol>
                     <li>Le château</li>
@@ -10,22 +10,22 @@ export default function Footer() {
                     <li>0300000000</li>
                 </ol>
             </div>
-        <div>
-            <ol>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/carte">Notre carte</a></li>
-                <li><a href="/reservation">Réservation</a></li>
-                <li><a href="/login">Connexion</a></li>
-            </ol>
-        </div>
-        <div>
-            <ol>
-                <li>Mentions légales</li>
-                <li>Données personnelles</li>
-                <li>Accessibilité</li>
-                <li>Cookie</li>
-            </ol>
-        </div>
+             <div>
+                <ol>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/carte">Notre carte</a></li>
+                    <li><a href="/reservation">Réservation</a></li>
+                    <li><a href="/login">Connexion</a></li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li>Mentions légales</li>
+                    <li>Données personnelles</li>
+                    <li>Accessibilité</li>
+                    <li>Cookie</li>
+                </ol>
+            </div>
         </div>
     </footer>
   );

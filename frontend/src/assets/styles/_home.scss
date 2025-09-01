@@ -1,0 +1,26 @@
+.container-home{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 0 auto;
+    padding-top: 0.1rem !important;
+    gap: 2.125rem;
+    img{
+        height: 200px;
+        object-fit: cover;
+    }
+    h1,h2{
+        margin: 0.2rem 2rem;
+    }
+    p{
+        margin: 0.2rem 2rem;
+    }
+    .container-chef{
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+
+    }
+}

@@ -1,0 +1,38 @@
+
+footer{
+    background-color: #0b131e;
+    padding: 2rem 1rem;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    ol{
+        list-style-type: none;
+    }
+    li{
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color:blue;
+            }
+        }
+    }
+}
+
+@media (max-width: 888px){
+    footer{
+        .container{
+            display: flex;
+            flex-direction: column;
+            ol{
+                margin-bottom: 2rem;
+            }
+        }
+     
+    }
+}

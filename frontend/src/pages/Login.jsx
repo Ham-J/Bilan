@@ -22,15 +22,15 @@ export default function Login(){
   };
 
   return (
-    <div className="container py-5" style={{maxWidth:420}}>
-      <h3>Connexion</h3>
+    <div className="container-login">
+      <h1>Se connecter</h1>
       <form onSubmit={submit} className="mt-3">
-        <input className="form-control mb-2" placeholder="Votre email"
+        <input className="form-control" placeholder="Votre email"
         value={email} onChange={e=>setEmail(e.target.value)} />
-        <input type="password" className="form-control mb-2" placeholder="Mot de passe"
+        <input type="password" className="form-control" placeholder="Mot de passe"
         value={password} onChange={e=>setPassword(e.target.value)} />
         {err && <div className="alert alert-danger">{err}</div>}
-        <button className="btn btn-dark w-100">Valider</button>
+        <button className="btn  w-100">Valider</button>
       </form>
     </div>
   );

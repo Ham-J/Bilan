@@ -1,0 +1,22 @@
+nav{
+    background-color: #bbd1ea;
+    .container-fluid{
+        margin: 0.313rem 2.5rem;
+    }
+    .navbar-brand{
+        img{
+            width: 68px;
+            height: 40;
+        }
+    }
+    .nav-item{
+        color:#04080f;
+    }
+    .btn{
+        background-color: #04080f ;
+        color: white;
+        &:hover{
+            background-color: #ffdf60;
+        }
+    }
+}
