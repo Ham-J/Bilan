@@ -1,15 +1,12 @@
-import { Router } from 'express'
-import { authRequired, currentUser, requireRole } from '../middleware/auth.js'
-import * as reservationController from '../controllers/reservationController.js'
+import { Router } from 'express';
+import { authRequired, requireRole } from '../middleware/auth.js';
+import { list, create, update, remove } from '../controllers/reservationController.js';
 
-const router = Router()
+const router = Router();
 
-router.post('/', reservationController.create)
+router.get('/', authRequired, requireRole('employe', 'admin'), list);
+router.post('/', create);
+router.patch('/:id', authRequired, requireRole('employe', 'admin'), update);
+router.delete('/:id', authRequired, requireRole('employe', 'admin'), remove);
 
-
-router.get('/',    authRequired, currentUser, requireRole('admin','employe'), reservationController.list)
-router.get('/:id', authRequired, currentUser, requireRole('admin','employe'), reservationController.detail)
-router.patch('/:id', authRequired, currentUser, requireRole('admin','employe'), reservationController.update)
-router.delete('/:id', authRequired, currentUser, requireRole('admin','employe'), reservationController.remove)
-
-export default router
+export default router;
