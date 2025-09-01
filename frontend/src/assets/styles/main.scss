@@ -1,0 +1,16 @@
+@import "footer";
+@import "navbar";
+@import "carte";
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import "home";
+@import "reservations";
+@import "login";
+@import "employe";
+
+body{
+    font-family: "Bodoni Moda", serif;
+}
+h1,h2{
+    color: #ffdf60;
+    font-weight: bolder;
+}

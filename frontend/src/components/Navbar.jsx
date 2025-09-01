@@ -1,14 +1,14 @@
 import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../authContext";
-
+import logo from "../assets/img/logo.png";
 export default function Navbar() {
   const { user, logout } = useAuth();
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light border-bottom">
+    <nav className="navbar navbar-expand-lg  border-bottom">
       <div className="container-fluid">
         
-        <Link className="navbar-brand fw-semibold" to="/">Le Château</Link>
+        <Link className="navbar-brand fw-semibold" to="/"><img src={logo} alt="illustration du logo du restaurant"></img></Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -57,9 +57,9 @@ export default function Navbar() {
           </ul>
           <div className="d-flex">
             {!user ? (
-              <NavLink to="/login" className="btn btn-outline-dark">Connexion</NavLink>
+              <NavLink to="/login" className="btn">Connexion</NavLink>
             ) : (
-              <button className="btn btn-dark" onClick={logout}>
+              <button className="btn" onClick={logout}>
                 Déconnexion 
               </button>
             )}

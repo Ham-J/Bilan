@@ -9,6 +9,7 @@ import Reservation from "./pages/Reservation";
 import Login from "./pages/Login";
 import ReservationsManage from "./pages/ReservationsManage";
 import UsersManage from "./pages/UsersManage";
+import "./assets/styles/main.scss";
 
 export default function App(){
   return (

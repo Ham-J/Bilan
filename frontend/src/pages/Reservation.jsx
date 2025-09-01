@@ -71,22 +71,22 @@ export default function Reservation() {
   const limits = limitsForService(form.service);
 
   return (
-    <section>
+    <section className="container-reservation">
       <h1>Réserver votre table</h1>
-      <div className="container py-5 h-100">
-        <div className="row d-flex align-items-center justify-content-center h-100">
-          <div className="col-md-8 col-lg-7 col-xl-6 mb-4 mb-lg-0">
+      <div className="container">
+        <div className="row">
+          <div className="col">
             <img
               src={table}
-              className="img-fluid"
+              className="img-table"
               alt="Illustration réservation"
             />
           </div>
 
-          <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <div className="col">
             <form onSubmit={submit}>
             
-              <div className="mb-3">
+              <div>
                 <input
                   className="form-control form-control-lg"
                   name="nom"
@@ -96,7 +96,7 @@ export default function Reservation() {
                   required
                 /> 
               </div>
-              <div className="mb-3">
+              <div>
                 <input
                   className="form-control form-control-lg"
                   name="prenom"
@@ -106,7 +106,7 @@ export default function Reservation() {
                   required
                 />
               </div>
-              <div className="mb-3">
+              <div>
                 <input
                   type="email"
                   id="emailInput"
@@ -118,7 +118,7 @@ export default function Reservation() {
                   required
                 />
               </div>
-              <div className="mb-3">
+              <div>
                 <input
                   type="date"
                   className="form-control form-control-lg"
@@ -130,7 +130,7 @@ export default function Reservation() {
                 />
                
               </div>
-              <div className="mb-3">
+              <div>
                
                 <input
                   type="time"
@@ -143,7 +143,7 @@ export default function Reservation() {
                   required
                 />
               </div>
-               <div className="mb-3">
+               <div>
                 <select
                   className="form-select form-select-lg"
                   name="service"
@@ -156,7 +156,7 @@ export default function Reservation() {
                 </select>
                
               </div>
-              <div className="mb-3">
+              <div>
                 <input
                   type="number"
                   className="form-control form-control-lg"
@@ -168,7 +168,7 @@ export default function Reservation() {
                     equired
                 />
               </div>
-              <button type="submit" className="btn btn-primary btn-lg w-100">
+              <button type="submit" className="btn btn-lg">
                 Valider 
               </button>
               {msg && <div className="alert alert-info mt-3 mb-0">{msg}</div>}

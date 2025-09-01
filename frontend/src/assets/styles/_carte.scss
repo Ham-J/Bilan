@@ -1,0 +1,20 @@
+.container-carte{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+
+    gap: 2.125rem;
+    ol{
+        list-style: none;
+        li{
+            text-align: center;
+        }
+    }
+    img{
+        width: 152px;
+        height: 90px;
+    }
+}

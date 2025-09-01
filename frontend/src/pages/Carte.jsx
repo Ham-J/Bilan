@@ -2,8 +2,8 @@ import logo from '../assets/img/logo.png';
 
 export default function Carte(){ 
     return (
-        <div className="container py-4">
-             <img src={logo} alt="Page non trouvée" />
+        <div className="container-carte py-4">
+             <img src={logo} alt="illustration de notre logo" />
             <h1>Notre carte</h1>
             <h2>Les entrées</h2>
             <ol>

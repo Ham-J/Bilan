@@ -1,0 +1,22 @@
+.container-login{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    gap: 30px;
+    .form-control{
+        width: 20.68rem;
+        margin-bottom: 2rem;
+    }
+    .btn{
+        background-color: #04080f;
+        color: white;
+        &:hover{
+            background-color: #ffdf60;
+        }
+    }
+}
