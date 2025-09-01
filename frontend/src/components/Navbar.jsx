@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg bg-light border-bottom">
-      <div className="container">
+      <div className="container-fluid">
         
         <Link className="navbar-brand fw-semibold" to="/">Le Château</Link>
         <button
@@ -60,7 +60,7 @@ export default function Navbar() {
               <NavLink to="/login" className="btn btn-outline-dark">Connexion</NavLink>
             ) : (
               <button className="btn btn-dark" onClick={logout}>
-                Déconnexion ({user.role})
+                Déconnexion 
               </button>
             )}
           </div>
