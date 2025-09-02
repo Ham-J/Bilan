@@ -1,4 +1,4 @@
-USE restaurant;
+USE resto;
 
 INSERT INTO users (email, password, role) VALUES
 ('admin@resto.local', 'admin123', 'admin'),
