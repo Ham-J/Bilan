@@ -53,7 +53,6 @@ cd Bilan
 ---
 
 ## Se connecter à l'application
-compte admin ---> Anna@resto.local / admin123 
-compte employe ---> test@employe.com / 1234
-
+-**compte admin**- admin@resto.local, admin123
+-**compte employe**- employe@resto.local', 'employe123
 
